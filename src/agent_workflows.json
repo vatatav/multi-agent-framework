@@ -1,0 +1,66 @@
+{
+  "Default_Rapid_Prototype": {
+    "sessionInfo": {
+      "version": "1.2.0",
+    "description": "A fast, lightweight workflow for rapid prototyping and robust agent referencing. Implements a tiered Coder system (Junior, Midlevel, Senior) with a defined escalation path."
+    },
+    "logging": {
+      "logLevel": "NONE"
+    },
+    "activeAgents": [
+      "dispatcher",
+      "planner",
+      "coder-junior",
+      "coder-midlevel",
+      "coder-senior"
+    ],
+    "sessionRules": {
+      "initialAssignmentPolicy": {
+          "defaultCoder": "coder-junior"
+      },
+      "failureHandling": {
+        "maxRetryCount": 3,
+        "escalationPolicy": "USE_ESCALATION_PATH",
+        "escalationPath": {
+            "coder-junior": "coder-midlevel",
+            "coder-midlevel": "coder-senior",
+            "coder-senior": "ESCALATE_TO_USER"
+        }
+      }
+    }
+  },
+
+  "MCA_Workflow_Comprehensive": {
+    "sessionInfo": {
+      "version": "1.1.0",
+      "description": "The MCA (Most Comprehensive Approach) Workflow using slugs. A high-rigor, disciplined methodology for formal project development."
+    },
+    "logging": {
+      "logLevel": "VERBOSE",
+      "logFilePath": "./.session_logs/mca_session_log.md"
+    },
+    "activeAgents": [
+      "dispatcher",
+      "planner",
+      "coder-junior",
+      "coder-midlevel",
+      "coder-senior",
+      "qa-verifier",
+      "sp-specialist"
+    ],
+    "sessionRules": {
+      "verificationRequired": true,
+      "planningMustPrecedeEdits": true,
+      "failureHandling": {
+        "maxRetryCount": 2,
+        "escalationPolicy": "USE_ESCALATION_PATH",
+        "handoverStrategy": "USE_FRESH_AGENT",
+        "escalationPath": {
+            "coder-junior": "coder-midlevel",
+            "coder-midlevel": "coder-senior",
+            "coder-senior": "ESCALATE_TO_USER"
+        }
+      }
+    }
+  }
+}

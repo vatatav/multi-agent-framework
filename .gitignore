@@ -1,0 +1,14 @@
+# Personal temporary files
+zzz*.*
+zzz*
+
+# VS Code / LLMCode specific
+.vscode/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Runtime configuration files
+.roomodes
+.agent_workflows
