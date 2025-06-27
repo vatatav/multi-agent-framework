@@ -1,4 +1,4 @@
-# Multi-Agent Framework
+# multi_clever_agents
 
 ## 1. Project Purpose
 
@@ -16,7 +16,7 @@ During **Session 15** (June 2025), a strategic decision was made to perform a "P
 
 **Status:** Active - Initial Setup
 
-This project has just been formally created. The core files have been migrated into this dedicated directory (`/01_frameworks/multi_agent_framework/`).
+This project has just been formally created. The core files have been migrated into this dedicated directory (`/01_hyper_space/multi_clever_agents/`).
 
 The immediate next steps are:
 - To initialize a dedicated Git repository for version control.

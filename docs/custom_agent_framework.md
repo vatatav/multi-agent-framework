@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-This document outlines the architecture for a general-purpose, multi-agent system. The framework is designed to be highly configurable and adaptable, moving beyond a single, hardcoded workflow. Its core purpose is to allow the user to define a "Mode of Operation" at the start of each session, dictating the procedures, rules, and agents to be used.
+This document outlines the architecture for a general-purpose, multi_clever_agents system. The framework is designed to be highly configurable and adaptable, moving beyond a single, hardcoded workflow. Its core purpose is to allow the user to define a "Mode of Operation" at the start of each session, dictating the procedures, rules, and agents to be used.
 
 This approach provides maximum flexibility, allowing for different levels of rigor—from rapid, "quick and dirty" scripting to fully-audited, procedural project development—all within the same underlying agent architecture.
 

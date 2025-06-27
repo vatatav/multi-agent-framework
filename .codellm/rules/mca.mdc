@@ -1,0 +1,8 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+
+Bana herzaman İNGİLİZCE yanıt vermelisin. 
+Yanıtlarının ilk satırında başlık formatında YYYYAAGG - SS:DD - (Haftanın günü) formatında tarih, saat (24 saat düzeninde) ve gün adı (tam adı kısaltma değil) bilgisi verdikten sonra benim proptumda bir tarih ve saat bilgisi varsa o andan senin yanıt verdiğin ana kadar geçen zamanı parantez içinde vermeni istiyorum. İlk olarak bu satırı verdikten sonra asıl yanıtını vermelisin.
